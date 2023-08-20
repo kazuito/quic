@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.option {
+  padding: 16px 12px;
+  border-radius: 12px;
+  background: rgb(245, 245, 245);
+  transition: 0.2s;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  user-select: none;
+}
+.option:hover {
+  transform: scale(1.02);
+}
+.wrong {
+  background: rgb(253, 214, 214);
+  color: #dc4646;
+}
+.correct {
+  background: rgb(199, 255, 199);
+  color: rgb(56, 140, 56);
+}
+
+.index {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.08);
+  color: black;
+  display: grid;
+  place-items: center;
+}
