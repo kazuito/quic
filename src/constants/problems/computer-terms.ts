@@ -1,4 +1,4 @@
-export const PROBLEMS = [
+export const PROBLEMS_COMPUTER_TERM = [
   "２進数の 11、1001 は10進数では {{3}} 、 {{9}} である。",
   "２進数の 110 は８進数では {{6}} である。",
   "８進数では数字のうち０〜 {{7}} を表記に使用する。",

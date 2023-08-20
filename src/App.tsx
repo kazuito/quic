@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
-import { PROBLEMS } from "./constants/problems";
+import { PROBLEMS_EUROPE_HIST } from "./constants/problems/europe-history";
+
 import Options from "./components/Options";
 import { Problem } from "./components/Problem";
 import History from "./components/History";
@@ -21,6 +22,8 @@ function getRandTerm(problemText: string) {
 }
 
 function createProblem() {
+  const PROBLEMS = PROBLEMS_EUROPE_HIST;
+
   const problemIndex = rndInt(0, PROBLEMS.length);
   const text = PROBLEMS[problemIndex];
   const { term: ansTerm, index: termIndex } = getRandTerm(text);
@@ -104,6 +107,7 @@ function App() {
   return (
     <div className={styles.container}>
       <div className={styles.problem_section}>
+        EUROPE
         <Problem problem={problem} />
         <Options options={options} onOptionClick={onOptionClick} />
       </div>
